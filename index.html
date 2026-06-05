@@ -251,18 +251,7 @@
   .project-card:hover { border-color: var(--border2); transform: translateY(-3px); }
   .project-card:hover::before { opacity: 1; }
 
-  .project-img {
-    height: 160px;
-    background: var(--bg3);
-    border-radius: 4px;
-    margin-bottom: 1.5rem;
-    display: flex; align-items: center; justify-content: center;
-    border: 1px solid var(--border);
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-  }
+  .project-img { display: none; }
 
   .project-title {
     font-size: 18px;
@@ -518,7 +507,6 @@
   <p class="section-label">Projects</p>
   <div class="projects-grid">
     <div class="project-card">
-      <div class="project-img">[ screenshot ]</div>
       <p class="project-title">Jersey Scanner</p>
       <p class="project-desc">Photo-based sports jersey identifier that returns real-time resale pricing and a sell/hold verdict using AI vision and live eBay sold-listing data.</p>
       <div class="project-stack">
@@ -530,7 +518,6 @@
       </div>
     </div>
     <div class="project-card">
-      <div class="project-img">[ screenshot ]</div>
       <p class="project-title">Resume & Job Tracker</p>
       <p class="project-desc">Full-stack app where users upload resume PDFs to S3 via Lambda, with an Angular dashboard for tracking applications, statuses, and resume versions.</p>
       <div class="project-stack">
@@ -541,17 +528,7 @@
         <span class="tag">DynamoDB</span>
       </div>
     </div>
-    <div class="project-card">
-      <div class="project-img">[ screenshot ]</div>
-      <p class="project-title">Enterprise Monitoring Platform</p>
-      <p class="project-desc">Internal dashboard tracking health status across 530+ services at 84 Lumber. Reduced time to identify system outages across dev, staging, and production environments.</p>
-      <div class="project-stack">
-        <span class="tag">TypeScript</span>
-        <span class="tag">REST APIs</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">.NET</span>
-      </div>
-    </div>
+
   </div>
 </section>
 
